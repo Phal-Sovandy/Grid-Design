@@ -1,8 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     background-color: rgb(195, 217, 235);
     display: flex;
     padding-bottom: 500px;
+    color: #001F3F;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
 }
 
 main{
