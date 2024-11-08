@@ -139,7 +139,116 @@ i{
 
 
 aside{
-    width: 300px;
+    width: 400px;
     height: 100vh;
-    background-color: red;
+    padding-inline: 10px;
+    background-color: rgb(216, 216, 216);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-menu{
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mid-1-menu h3{
+    margin-bottom: 0px;
+}
+.mid-1-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#image-profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #9ec1ff;
+    position: relative;
+}
+#image-profile i{
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    color: #353535;
+}
+.mid-2-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: auto;
+}
+.menu-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+.left-menu-card{
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 20px;
+    border-radius: 5px;
+}
+.mid-menu-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mid-menu-card *{
+    margin: 0;
+}
+.right-menu-card{
+    flex: 1;
+}
+.progress-result{
+    height: 100%;
+}
+.result-menu-bar{
+    background-color: rgb(206, 206, 206);
+    height: 6px;
+    border-radius: 3px;
+    width: 100%;
+    overflow: 
+    hidden;
+}
+
+#menu-result-1{
+    width: 90%;
+    background-color: #008cff;
+}
+#menu-result-2{
+    width: 70%;
+    background-color: #ffd900;
+}
+
+.top-bar-menu{
+    padding-inline: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-card-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.menu-card-inlist{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
 }
