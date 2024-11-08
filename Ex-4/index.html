@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
 <body>
     <section class="side-bar">
@@ -61,18 +61,225 @@
 
     <main>
         <nav>
-            <div class="left-nav"></div>
-            <div class="mid-nav"></div>
-            <div class="right-nav"></div>
+            <div class="left-nav">
+                <h3>Dashboard</h3>
+            </div>
+            <div class="right-nav">
+                <div id="time-nav">
+                    <h3>11 Sep 2007, Someday</h3>
+                </div>
+                <div id="search-icon-nav">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </div>
+            </div>
         </nav>
 
         <section class="container-main">
-            <div class="welcoming"></div>
-            <div class="information">
-                <div class="left-main"></div>
-                <div class="right-main"></div>
+            <div class="welcoming">
+                <div id="text-welcoming">
+                    <h2>Welocome back to AMBATUKUM!</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex nesciunt dolorum ratione cupiditate nostrum nisi.</p>
+                </div>
+                <img src="image/welcoming.png">
             </div>
-            <div class="bottom-main"></div>
+            <div class="information">
+                <div class="left-main">
+                    <div id="top-left-main">
+                        <h4>Latest results</h4>
+                        <div>
+                            <h4>More</h4>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div id="listing-result">
+                        <div class="result">
+                            <h4>Unit1 - <span>Tuesday</span></h4>
+                            <div class="result-bar-part">
+                                <div class="result-bar">
+                                    <div class="progress-result"  id="result-1"></div>
+                                </div>
+                                <p class="progress-percent" id="percent-1">69%</p>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <h4>Unit2 - <span>Monday</span></h4>
+                            <div class="result-bar-part">
+                                <div class="result-bar">
+                                    <div class="progress-result"  id="result-2"></div>
+                                </div>
+                                <p class="progress-percent" id="percent-2">25%</p>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <h4>Unit3 - <span>Friday</span></h4>
+                            <div class="result-bar-part">
+                                <div class="result-bar">
+                                    <div class="progress-result"  id="result-3"></div>
+                                </div>
+                                <p class="progress-percent" id="percent-3">89%</p>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <h4>Unit4 - <span>Saturday</span></h4>
+                            <div class="result-bar-part">
+                                <div class="result-bar">
+                                    <div class="progress-result"  id="result-4"></div>
+                                </div>
+                                <p class="progress-percent" id="percent-4">9%</p>
+                            </div>
+                        </div>
+                        <div class="result">
+                            <h4>Unit5 - <span>Wednesday</span></h4>
+                            <div class="result-bar-part">
+                                <div class="result-bar">
+                                    <div class="progress-result" id="result-5"></div>
+                                </div>
+                                <p class="progress-percent" id="percent-5">34%</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+                <div class="right-main">
+                    <div id="top-right-main">
+                        <h4>Time spent on learning</h4>
+                        <div>
+                            <h4>Last Week</h4>
+                            <i class="fa-solid fa-circle-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div id="listing-activity">
+                        <div class="activity">
+                            <p>Sunday</p>
+                            <div class="activity-bar-part">
+                                <div class="activity-bar">
+                                    <div class="activity-result"  id="activity-r1-1"></div>
+                                    <div class="activity-result"  id="activity-r2-1"></div>
+                                    <div class="activity-result"  id="activity-r3-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <p>Monday</p>
+                            <div class="activity-bar-part">
+                                <div class="activity-bar">
+                                    <div class="activity-result"  id="activity-r1-2"></div>
+                                    <div class="activity-result"  id="activity-r2-2"></div>
+                                    <div class="activity-result"  id="activity-r3-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <p>Tuesday</p>
+                            <div class="activity-bar-part">
+                                <div class="activity-bar">
+                                    <div class="activity-result"  id="activity-r1-3"></div>
+                                    <div class="activity-result"  id="activity-r2-3"></div>
+                                    <div class="activity-result"  id="activity-r3-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <p>Wednesday</p>
+                            <div class="activity-bar-part">
+                                <div class="activity-bar">
+                                    <div class="activity-result"  id="activity-r1-4"></div>
+                                    <div class="activity-result"  id="activity-r2-4"></div>
+                                    <div class="activity-result"  id="activity-r3-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <p>Thrusday</p>
+                            <div class="activity-bar-part">
+                                <div class="activity-bar">
+                                    <div class="activity-result"  id="activity-r1-5"></div>
+                                    <div class="activity-result"  id="activity-r2-5"></div>
+                                    <div class="activity-result"  id="activity-r3-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <p>Friday</p>
+                            <div class="activity-bar-part">
+                                <div class="activity-bar">
+                                    <div class="activity-result"  id="activity-r1-6"></div>
+                                    <div class="activity-result"  id="activity-r2-6"></div>
+                                    <div class="activity-result"  id="activity-r3-6"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div id="data-type">
+                        <div class="each-color">
+                            <div class="color" id="color-1"></div>
+                            <p>Vocabulary</p>
+                        </div>
+                        <div class="each-color">
+                            <div class="color" id="color-2"></div>
+                            <p>Grammar</p>
+                        </div>
+                        <div class="each-color">
+                            <div class="color" id="color-3"></div>
+                            <p>Listening</p>
+                        </div>
+                        <div class="each-color">
+                            <div class="color" id="color-4"></div>
+                            <p>Writing</p>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+            <div class="bottom-main">
+                <div id="top-bottom-main">
+                    <h3>Your courses</h3>
+                    <div>
+                        <h4>More</h4>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div id="card-container">
+                    <div class="card" id="card-1">
+                        <div class="left-card"><h1>B1</h1></div>
+                        <div class="mid-card">
+                            <h5>Business English</h5>
+                            <h4>Grammar</h4>
+                        </div>
+                        <div class="right-card">
+                            <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card-2">
+                        <div class="left-card"><h1>B2</h1></div>
+                        <div class="mid-card">
+                            <h5>Business English</h5>
+                            <h4>Grammar</h4>
+                        </div>
+                        <div class="right-card">
+                            <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card-3">
+                        <div class="left-card"><h1>B3</h1></div>
+                        <div class="mid-card">
+                            <h5>Business English</h5>
+                            <h4>Grammar</h4>
+                        </div>
+                        <div class="right-card">
+                            <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -86,7 +293,9 @@
         </div>
         <div class="mid-1-menu"></div>
         <div class="mid-2-menu"></div>
-        <div class="bottom-menu"></div>
+        <div class="bottom-menu">
+            
+        </div>
 
     </aside>
     

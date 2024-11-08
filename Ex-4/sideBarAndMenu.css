@@ -22,7 +22,7 @@ i{
 }
 .top-side-bar h2{
     font-size: 2rem;
-    font-weight: 900;
+    font-weight: 800;
 }
 .top-side-bar i{
     color: #133E87;
@@ -139,7 +139,7 @@ i{
 
 
 aside{
-    width: 30vw;
+    width: 300px;
     height: 100vh;
     background-color: red;
 }
