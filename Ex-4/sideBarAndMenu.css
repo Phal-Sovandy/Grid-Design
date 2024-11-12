@@ -47,13 +47,11 @@ i{
     align-items: center;
     gap: 20px;
     position: relative;
-    transition: background-color 0.2s ease;
 }
 .mid-side-bar-element h3{
+    font-weight: 500;
     color: #A6AEBF;
-}
-.mid-side-bar-element:hover{
-    background-color: #dfdfdf;
+    transition: color 0.2s ease;
 }
 .mid-side-bar-element:hover > h3{
     color: #45474B;
@@ -61,8 +59,8 @@ i{
 .mid-side-bar-element:hover > i{
     color: #608BC1;
 }
-.mid-side-bar-element:active{
-    background-color: #396ec98a;
+.mid-side-bar-element:active > h3{
+    color: white;
 }
 
 
@@ -86,10 +84,9 @@ i{
 .bottom-side-bar{
     position: relative;
     height: 180px;
-    padding-inline: 30px;
-    padding-bottom: 10px;
     background-color: rgb(217, 229, 236);
     border-radius: 15px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
@@ -112,7 +109,7 @@ i{
     background-color: #608BC1;
     padding: 10px 50px;
     color: #F4F6FF;
-    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     font-weight: 900;
     border-radius: 10px;
@@ -244,6 +241,15 @@ aside{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.top-menu i{
+    transition: color 0.2s ease;
+}
+.top-menu i:hover{
+    color: #001F3F;
+}
+.top-menu i:active{
+    color: #6b9aff;
 }
 .bottom-menu{
     flex: 1;

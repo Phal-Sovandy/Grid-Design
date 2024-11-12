@@ -3,23 +3,25 @@
 }
 body{
     margin: 0;
+    width: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
     color: #001F3F;
     font-family: Outfit, Arial, Helvetica, sans-serif;
-    padding-bottom: 500px;
 
 }
 
 main{
     background-color: #FFF8F3;
-    flex: 1 1;
+    flex: 1;
+    min-width: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     padding-inline: 20px;
 }
+
 
 nav{
     width: 100%;
@@ -33,11 +35,10 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     
 }
 #search-icon-nav{
-    background-color: #FF4545;
     width: 40px;
     height: 40px;
     border-radius: 10px;
@@ -70,7 +71,6 @@ nav{
     justify-content: center;
     align-items: center;
     height: 40px;
-    padding-inline: 10px;
     border-radius: 10px;
 }
 .left-nav, #search-icon-nav, #time-nav{
@@ -91,9 +91,11 @@ nav{
     overflow: hidden;
 }
 
+
 .welcoming{
     background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-    width: 100%;
+    min-width: 50px;
+    max-width: 100%;
     height: 350px;
     display: flex;
     justify-content: space-evenly;
@@ -119,20 +121,100 @@ nav{
     height: 120%;
 }
 
-
+@media (max-width: 1440px) {
+    .welcoming{
+        flex-direction: column;
+        height: auto;
+    }
+    .welcoming img{
+        width: 70%;
+        height: auto;
+    }
+    
+    .information{
+        flex-direction: column;
+    }
+}
+@media (max-width: 580px) {
+    #time-nav{
+        display: none;
+    }
+    #text-welcoming h2{
+        font-size: 2rem;
+    }
+    #text-welcoming p{
+        font-size: 1rem;
+    }
+    .side-bar{
+        width: 120px;
+    }
+    .top-side-bar{
+        padding-left: 20px;
+        padding-top: 30px;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .top-side-bar h2{
+        font-size: 1.5rem;
+    }
+    .mid-side-bar-element{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .mid-side-bar h3{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    #notification{
+        top: -13px;
+        left: 50px;
+    }
+    .bottom-side-bar img{
+        display: none;
+    }
+    .bottom-side-bar{
+        width: 95%;
+        height: auto;
+        padding: 5px;
+    }
+    #upgrade-button{
+        padding: 0;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+}
+@media (max-height: 650px) {
+    .bottom-side-bar{
+        display: none;
+    }
+}
+@media (max-width: 900px){
+    aside{
+        display: none;
+    }
+}
+@media (max-width: 360px){
+    .side-bar{
+        display: none;
+    }
+}
 
 
 
 
 .information{
     flex-grow: 1;
-    flex-shrink: 2;
     display: flex;
     gap: 20px;
 }
 .left-main, .right-main{
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: 1;
     border-radius: 10px;
 }
 .left-main, .right-main{
@@ -151,12 +233,26 @@ nav{
     padding-inline: 5px;
 }
 #top-left-main h4, #top-right-main h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+#top-left-main h3, #top-right-main h3{
     font-size: 1.2rem;
 }
 #top-left-main > div, #top-right-main > div{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+#top-left-main h4:hover,
+#top-right-main h4:hover,
+#top-bottom-main h4:hover{
+    color: #0D92F4;
+}
+#top-left-main h4:hover ~ i,
+#top-right-main h4:hover ~ i,
+#top-bottom-main h4:hover ~ i{
+    color: #0D92F4;
 }
 #listing-result{
     flex: 1;
@@ -239,9 +335,9 @@ nav{
 #listing-activity{
     flex: 1;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    border-radius: 10px;
+    gap: 20px;
+    overflow: scroll;
 }
 .activity{
     flex: 1;
@@ -346,6 +442,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .each-color{
     flex: 1;
@@ -397,10 +495,10 @@ nav{
 }
 #card-container{
     display: flex;
+    padding: 5px;
     align-items: center;
-    justify-content: center;
     gap: 20px;
-    overflow: visible;
+    overflow-x: auto;
 }
 .card{
     padding-inline: 10px;
@@ -412,6 +510,7 @@ nav{
     border-radius: 10px;
     color: white;
     transition: transform 0.1s ease-in;
+    
 }
 .mid-card{
     display: flex;
