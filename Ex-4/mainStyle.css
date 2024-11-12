@@ -350,6 +350,19 @@ nav{
     height: 25%;
 }
 
+#activity-r1-7{
+    background-color: #F95454;
+    height: 60%;
+}
+#activity-r2-7{
+    background-color: #0D92F4;
+    height: 5%;
+}
+#activity-r3-7{
+    background-color: #DBD3D3;
+    height: 35%;
+}
+
 
 #data-type{
     display: flex;
