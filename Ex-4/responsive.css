@@ -1,0 +1,84 @@
+
+@media (max-width: 1440px) {
+    .welcoming{
+        flex-direction: column;
+        height: auto;
+    }
+    .welcoming img{
+        width: 70%;
+        height: auto;
+    }
+    
+    .information{
+        flex-direction: column;
+    }
+}
+@media (max-width: 580px) {
+    #time-nav{
+        display: none;
+    }
+    #text-welcoming h2{
+        font-size: 2rem;
+    }
+    #text-welcoming p{
+        font-size: 1rem;
+    }
+    .side-bar{
+        width: 120px;
+    }
+    .top-side-bar{
+        padding-left: 20px;
+        padding-top: 30px;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .top-side-bar h2{
+        font-size: 1.5rem;
+    }
+    .mid-side-bar-element{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .mid-side-bar h3{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    #notification{
+        top: -13px;
+        left: 50px;
+    }
+    .bottom-side-bar img{
+        display: none;
+    }
+    .bottom-side-bar{
+        width: 95%;
+        height: auto;
+        padding: 5px;
+    }
+    #upgrade-button{
+        padding: 0;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+}
+@media (max-height: 650px) {
+    .bottom-side-bar{
+        display: none;
+    }
+}
+@media (max-width: 900px){
+    aside{
+        display: none;
+    }
+}
+@media (max-width: 360px){
+    .side-bar{
+        display: none;
+    }
+}
